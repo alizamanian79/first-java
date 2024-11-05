@@ -8,7 +8,8 @@ public class Getinput {
         Scanner scanner=new Scanner(System.in);
         int get= scanner.nextInt();
 
-
         System.out.println(get);
+
+        scanner.close();
     }
 }

@@ -14,6 +14,7 @@ public class Countinuegetvalue {
            clientNumber = scanner.nextInt();
            if (clientNumber==0)
                break;
+           scanner.close();
        }
 
 
