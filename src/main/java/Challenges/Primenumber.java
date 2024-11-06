@@ -1,4 +1,4 @@
-package org.example;
+package Challenges;
 
 public class Primenumber {
 
