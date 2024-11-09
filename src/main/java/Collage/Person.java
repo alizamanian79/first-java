@@ -5,6 +5,13 @@ public class Person {
     private String name,lastName,code;
 
 
+    public Person(long person_id, String name, String lastName, String code) {
+        this.person_id = person_id;
+        this.name = name;
+        this.lastName = lastName;
+        this.code = code;
+    }
+
     public long getPerson_id() {
         return person_id;
     }

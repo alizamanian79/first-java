@@ -4,6 +4,13 @@ public class Teacher extends Person{
     private long cardNumber;
     private String position;
 
+
+    public Teacher(long person_id, String name, String lastName, String code, long cardNumber, String position) {
+        super(person_id, name, lastName, code);
+        this.cardNumber = cardNumber;
+        this.position = position;
+    }
+
     public long getCardNumber() {
         return cardNumber;
     }

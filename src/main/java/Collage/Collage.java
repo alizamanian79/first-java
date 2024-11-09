@@ -4,20 +4,12 @@ import OOP.Library.Student;
 
 public class Collage {
     public static void main(String[] args) {
-        Person s1=new Person();
-        s1.setPerson_id(1);
-        s1.setName("Ali");
-        s1.setLastName("Zamanian");
-        s1.setCode("dse58");
+        Person s1=new Person(1,"Ali","Zamanian","88de");
         s1.introduce();
 
         System.out.println("******** \t ******** \t ********");
 
-        Teacher t1=new Teacher();
-        t1.setPerson_id(2);
-        t1.setName("Ali");
-        t1.setLastName("Zamanian");
-        t1.setCode("dse58");
+    Teacher t1 = new Teacher(25,"Mohsen","izadi","8d8e",56559,"Java Teacher");
         t1.introduce();
     }
 }
