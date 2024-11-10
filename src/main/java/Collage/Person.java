@@ -4,6 +4,15 @@ public class Person {
     private long person_id;
     private String name,lastName,code;
 
+    @Override
+    public String toString() {
+        return "Person{" +
+                "person_id=" + person_id +
+                ", name='" + name + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", code='" + code + '\'' +
+                '}';
+    }
 
     public Person(long person_id, String name, String lastName, String code) {
         this.person_id = person_id;
