@@ -2,19 +2,21 @@ package Abstract;
 
 public class AbstractEx {
     public static void main(String[] args) {
-        Animal dog = new Dog("Dog");
-        dog.getAnimalName();
+        Animal dog = new Dog();
+        System.out.println(dog.getClass().getSimpleName());
         dog.sound();
         dog.move();
         System.out.println("**************");
-        Animal cat = new Cat("Cat");
-        cat.getAnimalName();
+        Animal cat = new Cat();
+        System.out.println(cat.getClass().getSimpleName());
         cat.sound();
         cat.move();
+        String s = cat.getClass().getSimpleName();
+        System.out.println(s);
 
         System.out.println("**************");
-        Animal fish = new Fish("Fish");
-        fish.getAnimalName();
+        Animal fish = new Fish();
+        System.out.println(fish.getClass().getSimpleName());
         fish.sound();
         fish.move();
     }
@@ -25,25 +27,12 @@ public class AbstractEx {
 abstract class Animal {
 
 
-    private String animalName;
-
-    public Animal(String animalName) {
-        this.animalName = animalName;
-    }
-
-    public String getAnimalName() {
-        System.out.println(this.animalName);
-        return animalName;
-    }
-
     public abstract void sound();
     public abstract void move();
 }
 
 class Dog extends Animal {
-    public Dog(String animalName) {
-        super(animalName);
-    }
+
 
     public void sound() {
         System.out.println("Bark");
@@ -55,9 +44,7 @@ class Dog extends Animal {
 
 
 class Cat extends Animal{
-    public Cat(String animalName) {
-        super(animalName);
-    }
+
 
     public void sound(){
         System.out.println("Meow");
@@ -68,9 +55,6 @@ class Cat extends Animal{
 }
 
 class Fish extends Animal{
-    public Fish(String animalName) {
-        super(animalName);
-    }
 
     public void sound(){
         System.out.println("no sound");
